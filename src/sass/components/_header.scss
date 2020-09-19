@@ -1,0 +1,50 @@
+@import "./../_variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: $color-primary;
+  z-index: 100;
+  width: 100%;
+
+  &__logo {
+    object-fit: contain;
+    height: 10rem;
+    margin-left: 2rem;
+  }
+  &__center {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: fit-content;
+    padding: 1rem;
+    height: 4rem;
+    border: 1px solid $color-tertiary;
+    border-radius: 99.9rem;
+
+    &--search {
+      background-color: $color-secondary;
+      border-radius: 100%;
+      padding: 1.5rem;
+      color: $color-primary;
+    }
+  }
+  &__center > input {
+    border: none;
+    width: 25rem;
+    outline-width: 0;
+    padding: 1rem;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    margin-right: 8rem;
+    font-size: 1.6rem;
+  }
+}
