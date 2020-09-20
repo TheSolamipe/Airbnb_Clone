@@ -15,7 +15,7 @@ function Header() {
         alt="airbnb logo"
       />
       <div className="header__center">
-        <input type="text" />
+        <input type="text" placeholder="Start your Search" />
         <SearchIcon className="header__center--search" />
       </div>
       <div className="header__right">
