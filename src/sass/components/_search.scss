@@ -3,6 +3,35 @@
   top: 3.5rem;
   left: 25%;
   width: 100vw;
+  z-index: 100;
+
+  @media screen and (max-width: 1200px) {
+    left: 25%;
+  }
+  @media screen and (max-width: 900px) {
+    left: 15%;
+    top: 4rem;
+  }
+  @media screen and (max-width: 600px) {
+    left: 0;
+  }
+  @media screen and (max-width: 450px) {
+    left: 0;
+    width: 70vw;
+    top: 4.6rem;
+  }
+  @media screen and (max-width: 370px) {
+    left: 0;
+    width: 50vw;
+  }
+}
+.search__table {
+  @media screen and (max-width: 450px) {
+    width: 70vw;
+  }
+  @media screen and (max-width: 370px) {
+    width: 50vw;
+  }
 }
 .search > h2 {
   display: flex;
@@ -14,6 +43,23 @@
   position: absolute;
   left: 0;
   top: 34.7rem;
+
+  @media screen and (max-width: 1200px) {
+    top: 31rem;
+    width: 49.8rem;
+  }
+  @media screen and (max-width: 900px) {
+    top: 35rem;
+    width: 58rem;
+  }
+  @media screen and (max-width: 450px) {
+    top: 57.5rem;
+    width: 59.8rem;
+  }
+  @media screen and (max-width: 370px) {
+    top: 77rem;
+    width: 72.8rem;
+  }
 }
 
 .search > input {
@@ -24,6 +70,23 @@
   height: 3rem;
   top: 38.7rem;
   border: none;
+
+  @media screen and (max-width: 1200px) {
+    top: 35rem;
+    width: 49.8rem;
+  }
+  @media screen and (max-width: 900px) {
+    top: 39rem;
+    width: 58rem;
+  }
+  @media screen and (max-width: 450px) {
+    top: 61.2rem;
+    width: 59.8rem;
+  }
+  @media screen and (max-width: 370px) {
+    top: 81rem;
+    width: 72.8rem;
+  }
 }
 .search > input:focus {
   outline-width: 0;
@@ -38,6 +101,23 @@
   color: $color-primary;
   width: 55.9rem;
   font-size: 1.4rem;
+
+  @media screen and (max-width: 1200px) {
+    top: 39rem;
+    width: 49.8rem;
+  }
+  @media screen and (max-width: 900px) {
+    top: 42.5rem;
+    width: 57.8rem;
+  }
+  @media screen and (max-width: 450px) {
+    top: 64.5rem;
+    width: 63.8rem;
+  }
+  @media screen and (max-width: 370px) {
+    top: 85rem;
+    width: 74.8rem;
+  }
 }
 .search > button:hover {
   background-color: $color-primary;
