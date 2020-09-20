@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "@material-ui/core";
+import Search from "./Search";
 
 import "./../../sass/main.scss";
 
 function Banner() {
+  const [showSearch, setShowSearch] = useState(false);
+
   return (
     <div className="banner">
       <div className="banner__search">
-        <Button variant="outlined" className="banner__searchButton">
-          Search Dates
+        {showSearch && <Search />}
+        <Button
+          onClick={() => setShowSearch(!showSearch)}
+          variant="outlined"
+          className="banner__searchButton"
+        >
+          {showSearch ? "Hide" : "SearchDates"}
         </Button>
       </div>
       <div className="banner__info">

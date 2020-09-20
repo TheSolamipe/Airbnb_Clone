@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./miniComponents/Header";
 import Banner from "./miniComponents/Banner";
+import Card from "./miniComponents/Card";
 
 import "../sass/main.scss";
 
@@ -9,7 +10,16 @@ function Home() {
     <div className="home">
       <Header />
       <Banner />
-      <h1 className="home__text">I am the home page</h1>
+      <div className="home__section">
+        <Card />
+        <Card />
+        <Card />
+      </div>
+      <div className="home__section">
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 }

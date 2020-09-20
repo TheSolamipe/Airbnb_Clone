@@ -5,15 +5,14 @@
     center center;
 
   &__search {
-    // top: 0;
     display: flex;
     flex-direction: column;
   }
   &__search > button {
-    background-color: $color-primary;
+    background-color: $color-primary !important;
     font-weight: 900 !important;
     text-transform: inherit !important;
-    color: $color-secondary;
+    color: $color-secondary !important;
     font-size: 1.4rem;
   }
 

@@ -1,9 +1,6 @@
 @import "./../_variables";
 
-// .home {
-//   background-color: $color-secondary;
-
-//   &__text {
-//     color: $color-tertiary;
-//   }
-// }
+.home__section {
+  display: flex;
+  padding: 30px;
+}
